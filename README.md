@@ -17,5 +17,7 @@ It is very useful if you are currently working with an older version of SAP
 
 [Fórmulas de SD](https://github.com/marianalarab/OLDBUTGOLD/blob/main/SDFormula.md)
 
+[Procurando Logo para ser usado em Smartforms ou SapScripts](https://github.com/marianalarab/OLDBUTGOLD/blob/main/ProcuraLOGO.md)
+
 ## 2011:
 [Criando uma classe com herança de uma classe abstrata - cl_tax_calc_br](cl_tax_calc_br.md)
