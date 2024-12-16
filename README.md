@@ -19,5 +19,8 @@ It is very useful if you are currently working with an older version of SAP
 
 [Procurando Logo para ser usado em Smartforms ou SapScripts](https://github.com/marianalarab/OLDBUTGOLD/blob/main/ProcuraLOGO.md)
 
+## 2010:
+[Executar um processo em outra Task](https://github.com/marianalarab/OLDBUTGOLD/blob/main/ProcessNewTask.md)
+
 ## 2011:
 [Criando uma classe com herança de uma classe abstrata - cl_tax_calc_br](cl_tax_calc_br.md)
