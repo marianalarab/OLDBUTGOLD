@@ -198,3 +198,66 @@ MODULE zm_help_objid INPUT.
                 OTHERS                = 3.
 ENDMODULE.   " ZM_HELP_OBJID  INPUT
 ```
+PARA O CAMPO ZTIPO_CONTR:
+
+```abap
+*&---------------------------------------------------------------------*
+*&  Module ZM_HELP_ZTIPO INPUT
+*&---------------------------------------------------------------------*
+*   Ajuda de pesquisa para o campo tipo de contratação
+*----------------------------------------------------------------------*
+MODULE zm_help_ztipo INPUT.
+
+    TYPES: BEGIN OF tipo_type,
+            tipo TYPE ztbmm0006-tipo,
+            zdesc TYPE ztbmm0006-zdesc,
+            END OF tipo_type.
+            
+    DATA: lc_repid TYPE sy-repid,
+          gw_tipo  TYPE STANDARD TABLE OF tipo_type.
+          
+    FIELD-SYMBOLS: <fs_retorno> TYPE ddshretval.
+    CONSTANTS: c_ret_field TYPE dfies-fieldname     VALUE 'TIPO', 
+               c_tipo_ctr  TYPE help_info-dynprofld VALUE 'EKKO_CI-ZTIPO_CONTR', 
+               c_s         TYPE ddbool_d            VALUE 'S'.
+               
+    SELECT tipo zdesc INTO TABLE gw_tipo FROM ztbmm0006.
+    SORT gw_tipo ASCENDING.
+    DELETE ADJACENT DUPLICATES FROM gw_tipo COMPARING ALL FIELDS.
+    
+    CALL FUNCTION 'F4IF_INT_TABLE_VALUE_REQUEST'
+        EXPORTING
+            retfield        = c_ret_field    
+            dynpprog        = lc_repid    
+            dynpnr          = sy-dynnr      
+            dynprofield     = c_tipo_ctr      
+            value_org       = c_s
+        TABLES
+            value_tab       = gw_tipo     
+            return_tab      = gw_retorno   
+        EXCEPTIONS
+            parameter_error = 1  
+            no_values_found = 2      
+            OTHERS          = 3.  
+            
+    READ TABLE gw_retorno ASSIGNING <fs_retorno> INDEX 1.
+    IF NOT <fs_retorno> IS INITIAL.
+        MOVE: <fs_retorno>-fieldval TO ekko_ci-ztipo_contr.
+    ENDIF.
+ENDMODULE.       " ZM_HELP_ZTIPO  INPUT
+```
+
+Para que exista campos Z na EKKO
+
+Na mesma exit existe um include:
+CI_EKKODB -> isto é um include de tabela.
+
+![image](https://github.com/user-attachments/assets/d1b2d91e-db67-4bd9-b6cb-58fd667bc65a)
+
+Basta incluir os campos nesta estrutura, pois ela já esta incluída (append) na EKKO
+
+![image](https://github.com/user-attachments/assets/5c0af525-cc52-4426-8b09-1e1782bbe936)
+
+
+
+
