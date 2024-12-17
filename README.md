@@ -26,3 +26,5 @@ It is very useful if you are currently working with an older version of SAP
 [Criando uma classe com herança de uma classe abstrata - cl_tax_calc_br](cl_tax_calc_br.md)
 
 [Cast de Objeto em ABAP em SAP CRM Actions](https://github.com/marianalarab/OLDBUTGOLD/blob/main/ObjCAST.md)
+
+[Regra de susbtituição em FI](https://github.com/marianalarab/OLDBUTGOLD/blob/main/FIRegraSubs.md)
