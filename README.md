@@ -32,3 +32,7 @@ It is very useful if you are currently working with an older version of SAP
 [Objeto de Bloqueio](https://github.com/marianalarab/OLDBUTGOLD/blob/main/ObjBloqueio.md)
 
 [Criar Tag](https://github.com/marianalarab/OLDBUTGOLD/blob/main/CriarTag.md)
+
+## 2012:
+
+[Listando Request por descrição + Resolução de conflitos](https://github.com/marianalarab/OLDBUTGOLD/blob/main/ListReqbyDescr.md)
