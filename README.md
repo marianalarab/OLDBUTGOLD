@@ -30,3 +30,5 @@ It is very useful if you are currently working with an older version of SAP
 [Regra de susbtituição em FI](https://github.com/marianalarab/OLDBUTGOLD/blob/main/FIRegraSubs.md)
 
 [Objeto de Bloqueio](https://github.com/marianalarab/OLDBUTGOLD/blob/main/ObjBloqueio.md)
+
+[Criar Tag](https://github.com/marianalarab/OLDBUTGOLD/blob/main/CriarTag.md)
