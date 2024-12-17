@@ -36,3 +36,7 @@ It is very useful if you are currently working with an older version of SAP
 ## 2012:
 
 [Listando Request por descrição + Resolução de conflitos](https://github.com/marianalarab/OLDBUTGOLD/blob/main/ListReqbyDescr.md)
+
+## 2013:
+
+[Usando SQVI para obter melhores dados para testes](https://github.com/marianalarab/OLDBUTGOLD/blob/main/SQVIpTeste.md)
