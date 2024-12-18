@@ -42,3 +42,5 @@ It is very useful if you are currently working with an older version of SAP
 [Usando SQVI para obter melhores dados para testes](https://github.com/marianalarab/OLDBUTGOLD/blob/main/SQVIpTeste.md)
 
 [LSMW by Me](https://github.com/marianalarab/OLDBUTGOLD/blob/main/LSMWbyMe.md)
+
+[Ampliação de Infotipos(HR)](https://github.com/marianalarab/OLDBUTGOLD/blob/main/ExtendInfotiposHR.md)
