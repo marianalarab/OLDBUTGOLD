@@ -44,3 +44,7 @@ It is very useful if you are currently working with an older version of SAP
 [LSMW by Me](https://github.com/marianalarab/OLDBUTGOLD/blob/main/LSMWbyMe.md)
 
 [Ampliação de Infotipos(HR)](https://github.com/marianalarab/OLDBUTGOLD/blob/main/ExtendInfotiposHR.md)
+
+## 2014:
+
+[Criando Variante Dinâmica](VarDinamica.md)
